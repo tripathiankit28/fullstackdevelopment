@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <title>
+
+    </title>
+    <body>
+        <div class="container">
+            <form method="POST" action="/update/<%user._id %>">
+                <div class="form-group">
+                    <label><b>Name</b></label>
+                    <input type="text" name="name" class="form-control" value="<%users.name%>">
+                </div>
+                <div class="form-group">
+                    <label><b>Email</b></label>
+                    <input type="email" name="email" class="form-control" value="<%users.email%>>
+                </div>
+                <div class="form-group">
+                    <label><b>Password</b></label>
+                    <input type="password" name="password" class="form-control" value="<%users.password%>>
+                </div>
+                <input type="submit" value="insert" class="primary">
+            </form>
+        </div>
+    </body>
+</html>
